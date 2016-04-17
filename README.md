@@ -1,5 +1,5 @@
 # dice
-Code for Matt Parker's Three Indistinguishable Dice Puzzle
+Code for [Matt Parker][http://standupmaths.com]'s Three Indistinguishable Dice Puzzle
 
 https://www.youtube.com/watch?v=xHh0ui5mi_E
 https://www.reddit.com/r/math/comments/4eltj8/the_three_indistinguishable_dice_puzzle/
