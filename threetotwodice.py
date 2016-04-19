@@ -125,6 +125,18 @@ def topair_(triple):
     m = (k-2)*(k-1)*k//6 + (j-2)*(j-1)//2 + i # tet(k-2)+tri(j-2)+i
     return (m//6+1, m%6+1)
 
+# lookup table
+def lookup_table():
+    ms = range(6+1)
+    row1 = " | ".join([ "%d%d" % (m//6, m%6) for m in ms ])
+    ms = [ tri(n) for n in range(5) ]
+    row2 = " | ".join(["  "]*2+[ "%d%d" % (m//6, m%6) for m in ms ])
+    ms = [ tet(n) for n in range(5) ]
+    row3 =  " | ".join(["  "]*2+[ "%d%d" % (m//6, m%6) for m in ms ])
+    print(row1)
+    print(row2)
+    print(row3)
+
 # Solution proposed by David Miller in comments for YouTube video by Matt Parker.
 # Does not work.
 """

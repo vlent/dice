@@ -16,3 +16,15 @@ def topair(triple):
     m = (k-2)*(k-1)*k//6 + (j-2)*(j-1)//2 + i # tet(k-2)+tri(j-2)+i
     return (m//6+1, m%6+1)
 ```
+
+For hand calculations:
+- If all the same: 00
+- If two the same: low -> row 1, high -> row 2, high -> row 3
+- If all different: low -> row 1, mid -> row 2, high -> row 3
+Do addition base 6. Interpret 0 as 6 or add 1 to each digit.
+
+|   |  1 |  2 |  3 |  4 |  5 |  6 |
+|---|----|----|----|----|----|----|
+| 1 | 01 | 02 | 03 | 04 | 05 | 10 |
+| 2 |    | 00 | 01 | 03 | 10 | 14 |
+| 3 |    | 00 | 01 | 04 | 14 | 32 |
