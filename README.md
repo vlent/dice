@@ -18,9 +18,11 @@ def topair(triple):
 ```
 
 For hand calculations:
+
 - If all the same: 00
 - If two the same: low -> row 1, high -> row 2, high -> row 3
 - If all different: low -> row 1, mid -> row 2, high -> row 3
+
 Do addition base 6. Interpret 0 as 6 or add 1 to each digit.
 
 |   |  1 |  2 |  3 |  4 |  5 |  6 |
